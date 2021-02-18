@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { useDropdownMenu } from '../../../hooks/useDropdownMenu';
+import { LanguageSelector } from '../languageSelector/LanguageSelector';
 
-export default function Navigation() {
+export default function Navigation({language}) {
 
     const { isDropdown,setIsDropdown, buttonClass,  navBarDiv } = useDropdownMenu()
 
@@ -33,7 +34,6 @@ export default function Navigation() {
                             alt="Cuba Asistur"
                             width={60}
                             height={60}
-
                         />
                     </a>
                 </Link>
@@ -79,14 +79,9 @@ export default function Navigation() {
                             </form>
 
                             {/* Selector de Idiomas*/}
-                            <div>
-                                <form>
-                                    <div className="form-group">
-                                        <div id="options" data-input-name="country2" data-selected-country="ES"></div>
-                                    </div>
-                                </form>
-                            </div>
-                            {/* Selector de Idiomas*/} </div>
+                            <LanguageSelector/>
+                            {/* Selector de Idiomas*/} 
+                        </div>
                         {/* buscador */} 
                     </ul>
                     {/* ENDnavbar primary row blue */}
