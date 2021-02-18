@@ -5,7 +5,9 @@ export const LanguageSelector = () => {
 
     const [selected, setSelected] = useState('ES');
 
-    console.log(selected);
+    const onSelect = (languageCode)=>{
+        setSelected(languageCode)
+    }
     
     return (
         <>
@@ -13,8 +15,8 @@ export const LanguageSelector = () => {
                 selected={selected}
                 countries={["US","FR","ES","IT"]}
                 customLabels={{"US": "EN","FR": "FR","ES": "ES","IT": "IT"}}
-                onSelect={code => setSelected(code)}
-                selectedSize={12}
+                onSelect={ onSelect }
+                selectedSize={14}
                 selectButtonClassName="menu-flags-button"
             />
             <style jsx>{`
