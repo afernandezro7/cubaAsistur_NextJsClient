@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import { useSelector } from 'react-redux';
 import { useDropdownMenu } from '../../../hooks/useDropdownMenu';
 import { LanguageSelector } from '../languageSelector/LanguageSelector';
 
-export default function Navigation({language}) {
+export default function Navigation() {
 
     const { isDropdown,setIsDropdown, buttonClass,  navBarDiv } = useDropdownMenu()
+    const { lang } = useSelector( state => state );
 
 
     return (
@@ -95,22 +97,22 @@ export default function Navigation({language}) {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href= '/es/quienes-somos'>
+                                <Link href= {`/${lang.currentLang.toLowerCase()}/quienes-somos`}>
                                     <a className="nav-link trans--underline">Quienes Somos</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href= '/es/cobertura-de-poliza'>
+                                <Link href= {`/${lang.currentLang.toLowerCase()}/cobertura-de-poliza`}>
                                     <a className="nav-link trans--underline">Cobertura de Póliza</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/es/info-cuba">
+                                <Link href={`/${lang.currentLang.toLowerCase()}/info-cuba`}>
                                     <a className="nav-link trans--underline">Info de Cuba</a>
                                 </Link>
                             </li>
                             <li className="nav-item noshowseparator">
-                                <Link href="/es/clinicas-en-cuba">
+                                <Link href={`/${lang.currentLang.toLowerCase()}/clinicas-en-cuba`}>
                                     <a className="nav-link no-separator trans--underline">Clínicas en Cuba</a>
                                 </Link>
                             </li>
@@ -126,22 +128,22 @@ export default function Navigation({language}) {
                         </div>
                         <div className="order-3 row-header" style={{display: 'inherit'}} >
                             <li className="nav-item">
-                                <Link href= '/es/terminos-condiciones'>
+                                <Link href= {`/${lang.currentLang.toLowerCase()}/terminos-condiciones`}>
                                     <a className="nav-link trans--underline">Términos y Condiciones</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href= '/es/faqs'>
+                                <Link href= {`/${lang.currentLang.toLowerCase()}/faqs`}>
                                     <a className="nav-link trans--underline">FAQ'S</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href= '/es/fundamento-legal'>
+                                <Link href= {`/${lang.currentLang.toLowerCase()}/fundamento-legal`}>
                                     <a className="nav-link trans--underline">Fundamento Legal</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href= '/es/asistur-cuba'>
+                                <Link href= {`/${lang.currentLang.toLowerCase()}/asistur-cuba`} >
                                     <a className="nav-link trans--underline">ASISTUR en Cuba</a>
                                 </Link>
                             </li>

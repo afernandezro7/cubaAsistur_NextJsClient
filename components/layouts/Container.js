@@ -1,8 +1,27 @@
-import Navigation from "../ui/navBar/Navigation"
 import Head from 'next/head'
+import { useEffect } from "react"
+import { useRouter } from 'next/router'
+import { useDispatch, useSelector } from "react-redux"
+import Navigation from "../ui/navBar/Navigation"
 import { Footer } from "../ui/footer/Footer"
+import { startLangSelect_Action } from "../../redux/actions/langActions"
 
 const Container = ({children}) => {
+
+    const router = useRouter()
+    const { language } = router.query
+
+    const dispatch = useDispatch();
+    const { lang } = useSelector( state => state );
+
+    useEffect(() => {
+        if(language && language.toUpperCase()!== lang.currentLang){
+            dispatch(startLangSelect_Action(language.toUpperCase()))
+        }
+    }, [language])
+
+    
+
     return (
         <>
             <Head>

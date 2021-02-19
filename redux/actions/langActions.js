@@ -7,7 +7,7 @@ import { types } from "../types"
 /*
     MIDDLESWARE
 */
-export const startLangCheckingAction = ()=>{
+export const startLangChecking_Action = ()=>{
     return async(dispatch) =>{
 
         //TODO:fetch available
@@ -21,15 +21,36 @@ export const startLangCheckingAction = ()=>{
     }
 }
 
+export const startLangSelect_Action = (language)=>{
+    return async(dispatch) =>{
+
+        const currentLang = language;
+        const content = {};
+
+        dispatch(langSelectAction(currentLang,content))
+    }
+}
+
+
 /*
     ACTIONS
 */
-const langCheckingAction = ( currentLang, listOfLang)=>{
+const langCheckingAction = ( currentLang, availableLang)=>{
     return{
         type: types.authLogin,
         payload: {
-            currentLang:currentLangm,
-            availableLang:listOfLang
+            currentLang,
+            availableLang
+        }
+    }
+}
+
+const langSelectAction = ( currentLang, content)=>{
+    return{
+        type: types.lg_select,
+        payload: {
+            currentLang,
+            content
         }
     }
 }
