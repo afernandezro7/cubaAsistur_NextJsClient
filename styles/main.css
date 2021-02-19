@@ -475,10 +475,6 @@ a.cardselector :hover {
   font-size: 18px !important;
 }
 
-.thumbnail {
-  position: relative;
-}
-
 .bloquetransparente {
   position: absolute;
   bottom: 0%;
@@ -486,7 +482,7 @@ a.cardselector :hover {
   background-color: rgba(253, 245, 243, 0.6);
 }
 
-.bloquetransparente h2 a.efectoazul {
+.bloquetransparente h2 span.efectoazul {
   color: #074e7c;
   font-weight: bold;
   padding: 10px 0 10 0;
@@ -497,9 +493,6 @@ a.cardselector :hover {
   background-color: rgba(253, 245, 243, 0.8);
 }
 
-.bloquetransparente h2 a.efectoazul:hover {
-  text-decoration: none;
-}
 
 .bloquetransparente h2 {
   margin: 10px 0 10px 0;
@@ -525,9 +518,10 @@ a.cardselector :hover {
 
 @media (max-width: 479px) {
   .caption {
-    font-size: 1.25em !important;
+    font-size: 1em !important;
     width: 30% !important;
     padding-right: 2% !important;
+    top: 30%;
   }
 }
 @media (max-width: 576px) {

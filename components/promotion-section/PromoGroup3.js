@@ -5,9 +5,9 @@ const data = dataCard.find( card => card.promoGroup === 3 )
 
 export const PromoGroup3 = () => {
     return(
-        < div className = "row justify-content-center text-right position-relative" > <a href="# " target="_blank" rel="noopener noreferrer" className="cardselector"></a>
+        < div className = "row justify-content-center text-right position-relative px-0" >
            
-            <div className="col-lg-12 col-sm-12 thumbnail">
+            <div className="col-lg-12 col-sm-12 position-relative">
 
                 <PromoCard
                     target= {data.target}
@@ -26,3 +26,4 @@ export const PromoGroup3 = () => {
 
 }
 
+  

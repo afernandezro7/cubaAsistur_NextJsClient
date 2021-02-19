@@ -7,7 +7,7 @@ export const PromoCard = ( { target, imgSrc, imgAlt, caption, transparentSub=fal
         if(transparentSub){
             return(
                 <div className="bloquetransparente">                       
-                    <h2><a className="efectoazul" href="#">{ caption.toUpperCase() }</a> </h2>
+                    <h2><span className="efectoazul">{ caption.toUpperCase() }</span> </h2>
                 </div>
             )
         }
@@ -35,6 +35,7 @@ export const PromoCard = ( { target, imgSrc, imgAlt, caption, transparentSub=fal
                     renderCaption()
                 }
             </a>
+
         </>
     )
 }

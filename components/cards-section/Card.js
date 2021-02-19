@@ -6,7 +6,6 @@ export const Card = ( { img,imgAlt, h4html1, h4html2, h4html3, bgCard='bg-warnin
     return (
         <>
             < div className = "col-lg-4 col-md-6 col-sm-12 mb-0" > 
-                <a href="# " target="_blank" className="cardselector"></a>
                 <div 
                     className={ `card ${ bgCard }` }
                 >
