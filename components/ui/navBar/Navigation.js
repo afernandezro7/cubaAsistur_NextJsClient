@@ -7,6 +7,7 @@ export default function Navigation() {
 
     const { isDropdown,setIsDropdown, buttonClass,  navBarDiv } = useDropdownMenu()
     const { lang } = useSelector( state => state );
+    const { navbar }= lang.content
 
 
     return (
@@ -57,13 +58,13 @@ export default function Navigation() {
                                 <a className="nav-link item-icon" href="https://instagram.com/belraysa_tours?igshid=1az4m776avicz" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"/></a>
                             </li>
                             <li className="nav-item ml-auto pt-1 mr-4">
-                                <a className="nav-link btn btn-first-row" href="https://www.belraysatours.com/index.html#content5-16" target="_blank" rel="noopener noreferrer">¿Eres una agencia?</a>
+                                <a className="nav-link btn btn-first-row" href="https://www.belraysatours.com/index.html#content5-16" target="_blank" rel="noopener noreferrer">{ navbar.isAgency }</a>
                             </li>
                         </div>
                         <div className="mx-auto order-0">
                             <li className="nav-item">
-                                <a className="nav-link number" href="#" rel="nofollow">Llamadas a
-                                    <span id="callButton" href="tel:+507 5147 2323" className="number-call" rel="nofollow">+507 51472323</span> la central de Alarma
+                                <a className="nav-link number" href="#" rel="nofollow">{navbar.alarmCenter[0]}
+                                    <span id="callButton" href={`tel:${navbar.alarmCenter[1]}`} className="number-call" rel="nofollow">{navbar.alarmCenter[1]}</span> {navbar.alarmCenter[2]}
                                 </a>
                             </li>
                         </div>
@@ -73,7 +74,13 @@ export default function Navigation() {
                                 className="form-inline"
                             >
                                 <div className="input-group">
-                                    <input type="text" className="form-control search-input" placeholder="Busca su Póliza" aria-label="Username" aria-describedby="basic-addon1"/>
+                                    <input 
+                                        type="text" 
+                                        className="form-control search-input" 
+                                        placeholder={navbar.policySearch}
+                                        aria-label="Username" 
+                                        aria-describedby="basic-addon1"
+                                    />
                                     <div className="input-group-append">
                                         <span className="input-group-text" id="basic-addon1"><i className="fa fa-search"/></span>
                                     </div>
@@ -98,22 +105,22 @@ export default function Navigation() {
                             </li>
                             <li className="nav-item">
                                 <Link href= {`/${lang.currentLang.toLowerCase()}/quienes-somos`}>
-                                    <a className="nav-link trans--underline">Quienes Somos</a>
+                                    <a className="nav-link trans--underline">{ navbar.pagesLinks.about }</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href= {`/${lang.currentLang.toLowerCase()}/cobertura-de-poliza`}>
-                                    <a className="nav-link trans--underline">Cobertura de Póliza</a>
+                                    <a className="nav-link trans--underline">{ navbar.pagesLinks.policyCoverage }</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href={`/${lang.currentLang.toLowerCase()}/info-cuba`}>
-                                    <a className="nav-link trans--underline">Info de Cuba</a>
+                                    <a className="nav-link trans--underline">{ navbar.pagesLinks.cubaInfo }</a>
                                 </Link>
                             </li>
                             <li className="nav-item noshowseparator">
                                 <Link href={`/${lang.currentLang.toLowerCase()}/clinicas-en-cuba`}>
-                                    <a className="nav-link no-separator trans--underline">Clínicas en Cuba</a>
+                                    <a className="nav-link no-separator trans--underline">{ navbar.pagesLinks.clinics }</a>
                                 </Link>
                             </li>
                         </div>
@@ -129,22 +136,22 @@ export default function Navigation() {
                         <div className="order-3 row-header" style={{display: 'inherit'}} >
                             <li className="nav-item">
                                 <Link href= {`/${lang.currentLang.toLowerCase()}/terminos-condiciones`}>
-                                    <a className="nav-link trans--underline">Términos y Condiciones</a>
+                                    <a className="nav-link trans--underline">{ navbar.pagesLinks.terms }</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href= {`/${lang.currentLang.toLowerCase()}/faqs`}>
-                                    <a className="nav-link trans--underline">FAQ'S</a>
+                                    <a className="nav-link trans--underline"> { navbar.pagesLinks.faqs }</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href= {`/${lang.currentLang.toLowerCase()}/fundamento-legal`}>
-                                    <a className="nav-link trans--underline">Fundamento Legal</a>
+                                    <a className="nav-link trans--underline">{ navbar.pagesLinks.legaBasis }</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href= {`/${lang.currentLang.toLowerCase()}/asistur-cuba`} >
-                                    <a className="nav-link trans--underline">ASISTUR en Cuba</a>
+                                    <a className="nav-link trans--underline">{ navbar.pagesLinks.asisturPlaces }</a>
                                 </Link>
                             </li>
                             <li className="nav-item noshowseparator">

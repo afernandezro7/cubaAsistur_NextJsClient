@@ -1,9 +1,9 @@
 import { DatePicker } from 'antd';
-import moment from 'moment'
+import { languageConfig } from '../../../helpers/languagePicker';
 
 const { RangePicker } = DatePicker;
 
-export const RangePickerSelector = ( { datevalues, setDatevalues } ) => {
+export const RangePickerSelector = ( { datevalues, setDatevalues, language} ) => {
 
 
 
@@ -19,6 +19,7 @@ export const RangePickerSelector = ( { datevalues, setDatevalues } ) => {
        
     }
 
+
     return (
         < div className = "cardform-body mt-2"> 
             <div className="row">
@@ -26,7 +27,9 @@ export const RangePickerSelector = ( { datevalues, setDatevalues } ) => {
                     <div className="col-lg-12 col-sm-12">
                         <RangePicker 
                             size="middle"
-                            locale={spanishConfig}  
+                            locale={ 
+                                languageConfig(language) 
+                            }  
                             style={{ width: '100%' }}  
                             onChange={ handleChangePicker }                   
                         />
@@ -38,44 +41,3 @@ export const RangePickerSelector = ( { datevalues, setDatevalues } ) => {
     )
 }
 
-
-const spanishConfig = {
-    "lang": {
-      "locale": "es_ES",
-      "placeholder": "Select date",
-      "rangePlaceholder": ["Fecha Salida", "Fecha de Arribo"],
-      "today": "Hoy",
-      "now": "Ahora",
-      "backToToday": "Back to today",
-      "ok": "Ok",
-      "clear": "Limpiar",
-      "month": "Mes",
-      "year": "Año",
-      "timeSelect": "Select time",
-      "dateSelect": "Selecciona Fecha",
-      "monthSelect": "Selecciona el mes",
-      "yearSelect": "Selecciona el año",
-      "decadeSelect": "Selecciona la década",
-      "yearFormat": "YYYY",
-      "dateFormat": "D/M/YYYY",
-      "dayFormat": "D",
-      "dateTimeFormat": "D/M/YYYY HH:mm:ss",
-      "monthFormat": "MMMM",
-      "monthBeforeYear": true,
-      "previousMonth": "Previous month (PageUp)",
-      "nextMonth": "Next month (PageDown)",
-      "previousYear": "Last year (Control + left)",
-      "nextYear": "Next year (Control + right)",
-      "previousDecade": "Last decade",
-      "nextDecade": "Next decade",
-      "previousCentury": "Last century",
-      "nextCentury": "Next century"
-    },
-    "timePickerLocale": {
-      "placeholder": "Select time"
-    },
-    "dateFormat": "YYYY-MM-DD",
-    "dateTimeFormat": "YYYY-MM-DD HH:mm:ss",
-    "weekFormat": "YYYY-wo",
-    "monthFormat": "YYYY-MM"
-}

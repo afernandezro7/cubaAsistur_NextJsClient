@@ -2,6 +2,7 @@
 *         [LANG]  ACTIONS            *
 **************************************/
 
+import { tempContent } from "../store/tempData";
 import { types } from "../types"
 
 /*
@@ -25,7 +26,7 @@ export const startLangSelect_Action = (language)=>{
     return async(dispatch) =>{
 
         const currentLang = language;
-        const content = {};
+        const content = {...tempContent};
 
         dispatch(langSelectAction(currentLang,content))
     }

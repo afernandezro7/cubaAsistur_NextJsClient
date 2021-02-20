@@ -1,10 +1,11 @@
+import { tempContent } from "../store/tempData";
 import { types } from "../types"
 
 const initialState = {
     isChecking: true,
     currentLang: 'ES',
     availableLang: ['US','FR', 'ES', 'IT'],
-    content: {}
+    content: {...tempContent}
 }
 
 export const langReducer = ( state= initialState,action) => {

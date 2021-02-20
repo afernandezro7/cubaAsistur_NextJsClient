@@ -5,7 +5,7 @@ import { useSelector } from '../../../hooks/useSelector';
 
 
 
-export const PassengerSelector = ({selectors, setSelectors} ) => {
+export const PassengerSelector = ({selectors, setSelectors, language} ) => {
 
 
     const {selectorValues1, selectorValues2, select1, select2, handleChange} = useSelector(selectors, setSelectors)
@@ -17,8 +17,8 @@ export const PassengerSelector = ({selectors, setSelectors} ) => {
                 <div className="input-group no-border">
                     <div className="col-lg-6 col-sm-6">
                         <label htmlFor="form1-state">
-                            <i className="now-ui-icons users_single-02"/>&nbsp;&nbsp;0-69 años&nbsp;&nbsp;
-                            <i className="now-ui-icons travel_info" data-placement="right" title="La cantidad máxima admitida por cotización es de 5 personas"/>
+                            <i className="now-ui-icons users_single-02"/>&nbsp;&nbsp;{ language.minor69 }&nbsp;&nbsp;
+                            <i className="now-ui-icons travel_info" data-placement="right" title={ language.infoTravelers}/>
                         </label>
 
                         <Select 
@@ -35,13 +35,13 @@ export const PassengerSelector = ({selectors, setSelectors} ) => {
                     </div>
                     <div className="col-lg-6 col-sm-6">
                         <label htmlFor="form2-state">
-                            <i className="now-ui-icons users_single-02"/>&nbsp;&nbsp;+69 años&nbsp;&nbsp;
-                            <i className="now-ui-icons travel_info" data-placement="right" title="La cantidad máxima admitida por cotización es de 5 personas"/>
+                            <i className="now-ui-icons users_single-02"/>&nbsp;&nbsp;{ language.mayor69 }&nbsp;&nbsp;
+                            <i className="now-ui-icons travel_info" data-placement="right" title={ language.infoTravelers}/>
                         </label>
 
                         <Select 
                             size="middle"
-                            placeholder="Cantidad viajeros"
+                            placeholder={ language.qtyTravelers }
                             value={ select2 } 
                             onChange={ (value)=>handleChange(parseInt(value), 'selector2') } 
                             style={{ width: '100%' }}
