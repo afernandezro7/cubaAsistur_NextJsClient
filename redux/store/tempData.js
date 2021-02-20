@@ -27,6 +27,32 @@ export const tempContent={
         button: 'COTIZAR'
     },
     footer:{
+        siteMap: 'Mapa del sitio',
+        socials: 'Nuestras Redes Sociales: ',
+        guaranteed: 'Seguridad Garantizada',
+        addressLabel: 'Dirección: ',
+        address: 'Calle Erick del Valle, Edificio Katy 2, Planta Baja e/ Via Argentina y Calle Alberto Navarro, El Cangrejo, Bella Vista, Ciudad Panamá, Panamá.',
+        contactLabel: 'Contactos: ',
+        contactMail: 'comercial@belraysatours.com',
+        phone: ['Tel: ','+507 6930 3581'],
+        cellphone: ['Cell: ','+507 6450 4824'],
+        proslabel:'Ventajas de CubaAsistur ',
+        pros: [
+            {
+                header:'ASISTUR es la Compañía líder de seguros en Cuba',
+                content:['Experiencia desde 1991','Personal calificado','Una extensa red de proveedores','Central de Alarma disponible las 24 horas']
+            },
+            {
+                header:'Reserva online segura con certificados digitales',
+                content:[]
+            },
+            {
+                header:'Tecnología de avanzada',
+                content:[]
+            }
+        ],
+        copyRight: 'Copyright 2012 - 2020 |BELRAYSA S.A. | All Right Reserved | Belraysa Tours and Travel'
+
 
     }
 }
