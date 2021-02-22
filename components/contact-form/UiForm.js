@@ -3,7 +3,7 @@ import validator from 'validator'
 import { useState } from "react"
 import Swal from "sweetalert2"
 
-export const UiForm = () => {
+export const UiForm = ( {language} ) => {
 
     const [ formValues, handleInputChange, reset ]= useForm({
         name:'',
@@ -18,13 +18,13 @@ export const UiForm = () => {
         e.preventDefault();
         
         //Validar formvalues
-        if(name.trim()==='' || message.trim()==='' || !validator.isEmail(email.trim()) ){
+        if(name.trim()==='' || message.trim()==='' || !validator.isEmail(email.trim()) || whatsApp.trim()===''){
             setIsValidForm( false )
             return
         }
 
         // TODO: Enviar datos de contacto
-        Swal.fire('OK', 'Su mensaje ha sido enviado con éxito' ,'success')
+        Swal.fire('OK', language.msgSuccess ,'success')
 
         //Reset form values
         reset()
@@ -41,51 +41,54 @@ export const UiForm = () => {
                         <input 
                             type="text" 
                             className={`${ (isValidForm || !!name) ? 'form-control' : 'form-control is-invalid'}`}
-                            placeholder="su nombre (requerido)" 
+                            placeholder={language.nameInput} 
                             name="name"
                             value= { name }
                             onChange= { handleInputChange }
 
                         />
                         <div className="invalid-feedback">
-                            Porfavor introduzca su nombre!
+                            {language.nameFeedback}
                         </div>
                     </div>
                     <div className="form-group">
                         <input 
                             type="text" 
                             className={`${(isValidForm || validator.isEmail(email)) ? 'form-control' : 'form-control is-invalid'}`}
-                            placeholder="su email (requerido)"
+                            placeholder={language.emailInput} 
                             name="email"
                             value= { email }
                             onChange= { handleInputChange } 
                         />
                         <div className="invalid-feedback">
-                            Porfavor introduzca su email!
+                            {language.emailFeedback}
                         </div>
                     </div>
                     <div className="form-group">
                         <input 
                             type="text" 
-                            className="form-control" 
-                            placeholder="su whatsApp"
+                            className={`${ (isValidForm || !!whatsApp) ? 'form-control' : 'form-control is-invalid'}`}
+                            placeholder={language.whatsappInput} 
                             name="whatsApp"
                             value= { whatsApp }
                             onChange= { handleInputChange }
                         />
+                        <div className="invalid-feedback">
+                            {language.whatsappFeedback}
+                        </div>
                     </div>
                 </div>
                 <div className="col-md-6 col-sm-12 h-100">
                     <div className="form-group">
                         <textarea 
                             className={`${ (isValidForm || !!message) ? 'form-control' : 'form-control is-invalid'}`}                           
-                            placeholder="su mensaje"
+                            placeholder={language.msgTextarea} 
                             name="message"
                             value= { message }
                             onChange= { handleInputChange }
                         /> 
                         <div className="invalid-feedback">
-                            Porfavor introduzca su mensaje!
+                            {language.msgFeedback}
                         </div>                      
                     </div>
                 </div>

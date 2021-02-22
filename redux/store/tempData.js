@@ -26,6 +26,22 @@ export const tempContent={
         infoTravelers: 'La cantidad máxima admitida por cotización es de 5 personas',
         button: 'COTIZAR'
     },
+    promoCards:{
+
+    },
+    contact:{
+        header: 'Contáctenos',
+        msgSuccess: 'Su mensaje ha sido enviado con éxito',
+        nameInput: 'su nombre (requerido)',
+        emailInput: 'su email (requerido)',
+        whatsappInput: 'su whatsApp (requerido)',
+        msgTextarea: 'su mensaje',
+        nameFeedback: 'Porfavor introduzca su nombre!',
+        emailFeedback: 'Por favor introduzca su email!',
+        whatsappFeedback: 'Por favor introduzca su whatsApp',
+        msgFeedback: 'Por favor introduzca su mensaje!',
+        button: 'Enviar'
+    },
     footer:{
         siteMap: 'Mapa del sitio',
         socials: 'Nuestras Redes Sociales: ',
@@ -51,7 +67,9 @@ export const tempContent={
                 content:[]
             }
         ],
-        copyRight: 'Copyright 2012 - 2020 |BELRAYSA S.A. | All Right Reserved | Belraysa Tours and Travel'
+        copyRight: 'Copyright 2012 - 2020 |BELRAYSA S.A. | All Right Reserved | Belraysa Tours and Travel',
+
+        //
 
 
     }
