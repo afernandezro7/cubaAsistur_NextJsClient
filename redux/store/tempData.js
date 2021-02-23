@@ -533,5 +533,19 @@ export const tempContent={
                 link: []
             },
         ]
+    },
+    legaBasisPage:{
+        header: 'Fundamento Legal',
+        h1: 'Fundamento Legal',
+        imgAlt: 'Acuerdo 6774 del Comite Ejecutivo Consejo de Ministros sobre los seguros',
+        h2: 'CONSEJO DE MINISTROS',
+        certifier: 'El Secretario del Consejo de Ministros',
+        certicationLabel: 'CERTIFICA',
+        certicationInfo: 'Que el Comité Ejecutivo del Consejo de Ministros, haciendo uso de las facultades que le otorga el Artículo 97 de la Constitución de la República adoptó, con fecha 16 de febrero de 2010, el siguiente',
+        agreementLabel: 'ACUERDO',
+        firstAgreements:['PRIMERO: Exigir de forma obligatoria a todos los via-jeros, extranjeros y cubanos residentes en el exterior, para el ingreso al país, que cuenten con una póliza de seguro de viaje, con cobertura de gastos médicos, expedida por enti-dades aseguradoras reconocidas en Cuba.', 'En los puntos de entrada al país se asegurará la venta de estas pólizas, por entidades aseguradoras cubanas.', 'SEGUNDO: Exigir a los extranjeros con residencia tem-poral en Cuba, que cuenten con una póliza de seguro médico durante su estancia en el país, expedida por una entidad aseguradora cubana o extranjera, siempre que sea reconoci-da en Cuba.'],
+        lastAgreements: ['TERCERO: Excluir de la aplicación de la disposición anterior al personal diplomático y a los representantes de las organizaciones internacionales, acreditados en Cuba.', 'CUARTO: Encargar a la Ministra de Finanzas y Precios la aprobación de las formas de cobro de los servicios médi-cos y el valor de las pólizas de seguro a contratar con enti-dades aseguradoras cubanas, aplicables a viajeros, tanto extranjeros como cubanos residentes en el exterior y a ex-tranjeros residentes temporales.', 'QUINTO: Los ministros de Salud Pública y del Turis-mo, quedan facultados, en lo que a cada uno compete, para dictar las normas relativas al reordenamiento de la atención médica a viajeros, tanto extranjeros como cubanos residen-tes en el exterior y a extranjeros residentes temporales.','SEXTO: El presente Acuerdo comienza a regir a partir de 1ro. de mayo de 2010.', 'Y para remitir copia a los miembros del Comité Ejecuti-vo del Consejo de Ministros, y a cuantos otros sea pertinen-te, se expide la presente certificación en el Palacio de la Revolución, a los 16 días del mes de febrero de 2010.'],
+        author: 'Amado Ricardo Guerra',
+        pdf: 'Descargar en pdf'
     }
 }
