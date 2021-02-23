@@ -443,5 +443,48 @@ export const tempContent={
                 subItem: ['Habana / José Martí: (07)266-4644', 'Varadero / Juan Gualberto Gómez: (045)61-3016', 'Cayo Coco / Jardines del Rey: (033)30-9161', 'Cayo Largo / Vitalio Acuña: (045)24-8207', 'Santiago de Cuba / Antonio Maceo: (022)69-8614', 'Holguín / Frank País: (024)47-4525'] 
             },
         ]
+    },
+    termsPage:{
+        header: 'Términos y Condiciones',
+        h1: 'TÉRMINOS Y CONDICIONES DEL SITIO',
+        description: 'CubaAsistur funciona como canal de ventas online exclusivo de ASISTUR, que es una sociedad mercantil cubana del sector de los seguros y los servicios financieros. Al utilizar este sitio o reservar una póliza a través del mismo, Usted acepta estos Términos y Condiciones. Toda referencia a Usted significa Todas las personas que con Usted disfrutarán nuestros productos o servicios. Lea cuidadosamente estos Términos y Condiciones.',
+        terms:[
+            {
+                label: 'Obligaciones al utilizar nuestro sitio web',
+                paragraphs: ['Usted asegura contar con 18 años de edad o más, con capacidad legal de utilizar este sitio y que respetará las obligaciones legales para cualquier responsabilidad en que pueda incurrir como resultado del uso del mismo.', 'Usted asegura que toda la información introducida durante la reservación es correcta y acepta la responsabilidad financiera de todas las transacciones hechas bajo su nombre o cuenta.', 'La información de este sitio sólo podrá tener uso personal y sin propósitos comerciales.', 'NO garantizamos que el sitio esté libre de virus informáticos ni de otras propiedades que puedan causar pérdidas o perjuicios.', 'CubaAsistur y sus prestatarios no son responsables de la documentación requerida para su viaje a Cuba.'],
+                link: []
+            },
+            {
+                label: 'Uso de datos personales',
+                paragraphs: ['CubaAsistur hace todos los esfuerzos para asegurarse de que la información que usted intercambia en este sitio on-line, incluyendo datos personales e información de su tarjeta de crédito, sea tratada con toda la seguridad para proteger la información enviada desde su navegador hacia nuestros sistemas.', 'Todos los datos que Usted proporcione en el proceso de reserva y pago con tarjeta de crédito están protegidos a través de certificados digitales de nuestra pasarela de pago Páguelo Fácil, que cuenta con poderosos procesos para la encriptación de información sensible, garantizando que no puedan ser utilizados por terceros.'],
+                link: []
+            },
+            {
+                label: 'Exactitud de la información',
+                paragraphs: ['CubaAsistur es cuidadoso con los contenidos en este sitio, toda la información publicada tiene propósito de orientación y está sujeta a cambios en cualquier momento.'],
+                link: []
+            },
+            {
+                label: 'Fuerza mayor',
+                paragraphs: ['CubaAsistur no es responsable de eventos producidos por Fuerza Mayor, como resultado de acontecimientos fuera de su control. El término Fuerza Mayor incluye, pero NO se limita a desastres naturales, incendios, huelgas, guerras, bloqueos, insurrecciones, manifestaciones, terremotos, actos o restricciones impuestas por las autoridades gubernamentales, o cualquier otra razón que escape al control de CubaAsistur.'],
+                link: []
+            },
+            {
+                label: 'Vínculos a sitios web de terceros',
+                paragraphs: ['Este sitio web contiene enlaces a terceros sitios web, ajenos a CubaAsistur, solamente para su conveniencia y referencia. CubaAsistur no responde por sus contenidos.'],
+                link: []
+            },
+            {
+                label: 'Descargo de responsabilidad',
+                paragraphs: ['Se hacen cambios periódicamente a la información expuesta en este sitio web. CubaAsistur puede perfeccionar y/o hacer cambios en este sitio web en cualquier momento.', 'CubaAsistur se reserva el derecho de hacer cambios a estos Términos y Condiciones de Uso en cualquier momento.'],
+                link: []
+            },
+            {
+                label: 'Política de Cancelación',
+                paragraphs: ['Si Usted cancela total o parcialmente una póliza de seguro a Cuba después de recibir nuestra confirmación y voucher de reserva y los fondos han sido depositados en nuestra cuenta, CubaAsistur aplicará descuentos al reembolso por concepto de los gastos financieros y de operaciones relativos a su póliza.', 'Por concepto de gastos de operaciones se aplicará al reembolso un descuento de 3.00 USD.', 'Por concepto de gastos financieros se aplicará un descuento del 6% del valor total a reembolsar.', 'Si usted cancela en un plazo menor o igual a 3 días de la fecha de inicio de la póliza o durante la vigencia de la misma, se aplicará una penalización correspondiente al importe total de la reserva.', 'Para solicitar la cancelación de una póliza por favor hacer clic aquí: '],
+                link: ['int', '/', 'www.cubaAsistur.com/Contactenos', 4]
+            },
+            
+        ]
     }
 }
