@@ -88,6 +88,7 @@ export const tempContent={
             {
                 isList: true,
                 title: 'VENTAJAS DE CUBAASISTUR',
+                p: '',
                 items:[
                     {
                         header:'ASISTUR es la Compañía líder de seguros en Cuba',
@@ -106,7 +107,7 @@ export const tempContent={
             }
         ]
     },
-    coveragePolicyPage:{
+    policyCoveragePage:{
         header: 'Cobertura de Pólizas',
         h1: 'Cobertura de Pólizas Asistur',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, suscipit excepturi ipsa dignissimos sapiente quasi temporibus, voluptates nisi voluptatum sequi quas. Blanditiis hic ad est, sed molestiae id. Nam, vitae? Unde quia facere, harum libero modi vel eveniet ratione quis maxime aliquid placeat in veritatis ipsum, aspernatur earum, voluptate dolor!',

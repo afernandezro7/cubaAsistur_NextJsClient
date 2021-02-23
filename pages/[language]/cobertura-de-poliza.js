@@ -8,37 +8,37 @@ import html from 'react-inner-html';
 export default function CoberturaPoliza() {
 
     const lang = useSelector( state => state.lang );
-    const { content: { coveragePolicyPage } } = lang
+    const { content: { policyCoveragePage } } = lang
 
     return (
         <Container>
 
             <Head>
-                <title>{ coveragePolicyPage.header }</title>
+                <title>{ policyCoveragePage.header }</title>
             </Head>
 
             <main className="coberPolizas-page">
                 <section className = " container cober--Items"> 
                     <div className="cober--header mb-3">
-                        <h1 className="cober--Title text-primary">{ coveragePolicyPage.h1 }</h1>
-                        <p className="cober--headerContent">{ coveragePolicyPage.description }</p>
+                        <h1 className="cober--Title text-primary">{ policyCoveragePage.h1 }</h1>
+                        <p className="cober--headerContent">{ policyCoveragePage.description }</p>
                     </div>
                     <div className="cober--Item">
                         <div className="cober--ItemTitle text-primary text-center">
-                            <h2 className="cober--Tema text-primary">{ coveragePolicyPage.tableTittle }</h2>
+                            <h2 className="cober--Tema text-primary">{ policyCoveragePage.tableTittle }</h2>
                         </div>
                         <div className="cober--ItemContent">
                             <table className="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th colSpan={2} scope="col">{ coveragePolicyPage.table.headtitle }</th>
-                                        <th scope="col">{ coveragePolicyPage.table.headinfo }</th>
+                                        <th colSpan={2} scope="col">{ policyCoveragePage.table.headtitle }</th>
+                                        <th scope="col">{ policyCoveragePage.table.headinfo }</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     {
-                                        coveragePolicyPage.table.body.map( (item,index)=>(
+                                        policyCoveragePage.table.body.map( (item,index)=>(
                                             item.head
                                                 ?
                                                 <tr key={index}>
@@ -57,11 +57,11 @@ export default function CoberturaPoliza() {
                                         <td colSpan={3}>
                                             <div className="d-flex">
                                                 <span className="d-block pr-1">
-                                                    <b>{ coveragePolicyPage.table.extraPrima.head}</b>
+                                                    <b>{ policyCoveragePage.table.extraPrima.head}</b>
                                                 </span>
                                                 <span className="d-block">
-                                                    { coveragePolicyPage.table.extraPrima.p1}<br/>
-                                                    { coveragePolicyPage.table.extraPrima.p2}
+                                                    { policyCoveragePage.table.extraPrima.p1}<br/>
+                                                    { policyCoveragePage.table.extraPrima.p2}
                                                 </span>
                                             </div>
                                         </td>
@@ -80,15 +80,15 @@ export default function CoberturaPoliza() {
 
                     <div className="cober--Item ">
                         <div className="cober--ItemTitle text-primary d-flex justify-content-start ">
-                            <h2 className="cober--Tema text-primary ">{ coveragePolicyPage.exclusion.header }</h2>
+                            <h2 className="cober--Tema text-primary ">{ policyCoveragePage.exclusion.header }</h2>
                         </div>
                         <div className="cober--ItemContent">
-                            <p>{ coveragePolicyPage.exclusion.info }</p>
+                            <p>{ policyCoveragePage.exclusion.info }</p>
                         </div>
                     </div>
 
                     {
-                        coveragePolicyPage.exclusion.exTerms.map( (term,index)=>(
+                        policyCoveragePage.exclusion.exTerms.map( (term,index)=>(
 
                             <div className="cober--Item subItem" key={index}>
                                 <div className="cober--ItemTitle text-primary d-flex text-left ">
