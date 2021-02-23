@@ -1,32 +1,33 @@
 import Head from "next/head";
-import { useState } from "react";
-import ReactHtmlParser from 'react-html-parser';
+import Link from "next/link";
+import { useSelector } from "react-redux";
 import Container from "../../components/layouts/Container";
-import { faqsItems } from "../../data/faqs-data";
+
 
 export default function Faqs() {
+
+    const { faqsPage } = useSelector( state => state.lang.content );
+    
     
     return (
         <Container>
 
             <Head>
-                <title>FAQS-CAA</title>
+                <title>{faqsPage.header}</title>
             </Head>
 
             <main className="faqs-page">
                 <section className=" container faqs-Items">
                     <div className="faqs--header mb-3">
-                        <h1 className="faqs--Title text-primary">Preguntas Frecuentes Seguro de viaje Asistur</h1>
-                        <p className="faqs--headerContent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ab.
-                            Temporibus dolorem, fugit asperiores explicabo ullam voluptate corrupti placeat magni!
-                        </p>
+                        <h1 className="faqs--Title text-primary">{faqsPage.h1}</h1>
+                        <p className="faqs--headerContent">{faqsPage.description}</p>
                     </div>
 
                     {
-                        faqsItems.map( (faqsItem,index) =>(
+                        faqsPage.faqsItems.map( (faqsItem, index) =>(
 
                             <div 
-                                key={ faqsItem.id } 
+                                key={ index } 
                                 className="faqs--Item"
                             >
                                 <div className="faqs--itemTitle d-flex justify-content-between" >
@@ -34,7 +35,17 @@ export default function Faqs() {
                                     
                                 </div>
                                 <div className="faqs--ItemContent active" >
-                                    <p>{ ReactHtmlParser(faqsItem.htmlContent)  }</p>
+                                    <p>
+                                        { faqsItem.htmlContent }&nbsp;
+                                        {
+                                            (faqsItem.link.length >0)
+                                                ? faqsItem.link[0]==='int'
+                                                    ? <Link href={`${faqsItem.link[1]}`}><a>{faqsItem.link[2]}</a></Link>
+                                                    : <a href={`${faqsItem.link[1]}`} target="_blank" rel="noopener noreferrer">{faqsItem.link[2]}</a>
+                                                :null
+                                        }
+                                    
+                                    </p>
                                 </div>
                                 
                             </div>
