@@ -280,77 +280,77 @@ export const tempContent={
                 {
                     label: 'a)',
                     termInfo: 'Las prestaciones que no hayan sido solicitadas al Asegurador a través de la Central de Alarma de ASISTUR y efectuadas sin su acuerdo, salvo en caso de fuerza mayor o de imposibilidad material demostrada.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'b)',
                     termInfo: 'Los siniestros causados por dolo del Asegurado, del Tomador del Seguro, o de las personas que viajen con el Asegurado. Afecciones, enfermedades o lesiones derivadas directa o indirectamente de riña (salvo que se tratase de legítima defensa), huelga, actos de vandalismo o tumulto popular en que el Asegurado hubiese participado como elemento activo. El intento de o la comisión de un acto ilegal y, en general, cualquier acto doloso o criminal del Asegurado, incluido el suministrode información falsa o diferente de la realidad.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'c)',
                     termInfo: 'Los siniestros ocurridos en caso de guerra (declarada o no), manifestaciones y movimientos populares, actos de terrorismo y sabotaje, huelgas, detenciones por parte de cualquier autoridad por delito no derivado de accidente automotor, restricciones a la libre circulación o cualquier otro caso de fuerza mayor, a menos que el Asegurado pruebe que el siniestro no tiene relación con tales acontecimientos.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'd)',
                     termInfo: 'Participación en competencias peligrosas de cualquier índole, así como los entrenamientos o pruebas, las apuestas y las consecuencias que sobrevengan de la práctica de pasatiempos peligrosos o de alto riesgo, incluyendo, pero no limitado a: caza, actividades subacuáticas, aladeltismo, alpinismo, motociclismo, automovilismo, boxeo, vehículos todo terreno, etc. Esta exclusión podrá quedar sin efecto mediante el pago de un ',
-                    link: 'extrapremio'
+                    link:['int','/es/faq','extrapremio']
                 },
                 {
                     label: 'e)',
                     termInfo: 'Los siniestros que tengan por causa las irradiaciones procedentes de la transmutación o desintegración nuclear o la radiactividad.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'f)',
                     termInfo: 'El rescate en mar o montaña.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'g)',
                     termInfo: 'Viajes aéreos en aviones no destinados y autorizados como transporte público.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'h)',
                     termInfo: 'Suicidio o enfermedades y lesiones resultantes del intento de suicidio o causadas intencionalmente por el Asegurado a sí mismo.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'i)',
                     termInfo: 'Tratamientos, enfermedades y estados patológicos, así como cualquier consecuencia producida por la ingestión intencional o administración de tóxicos (drogas), alcohol, narcóticos o por la utilización de medicamentos sin prescripción médica.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'j)',
                     termInfo: 'Gastos de prótesis, órtesis, síntesis o ayudas mecánicas de todo tipo, ya sean de uso interno o externo, incluyendo pero no limitados a: <br> artículos de ortopedia, prótesis dentales, audífonos, anteojos, lentes de contacto, férulas, muletas, nebulizadores, respiradores, etc.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'k)',
                     termInfo: 'Embarazos, partos y abortos, independientemente de su etiología, así como cualquier consecuencia derivada de un estado de gestación, a menos que se trate de una complicación clara e imprevisible. Los estados de embarazo posteriores a la semana 26 de gestación están excluidos cualquiera sea la naturaleza de la causa que motiva el tratamiento.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'l)',
                     termInfo: 'Todo hecho derivado de una alteración mental, por cualquier causa y aún transitoria.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'm',
                     termInfo: 'Controles de tensión arterial. Hipertensión arterial y sus consecuencias.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'n)',
                     termInfo: 'Síndrome de inmunodeficiencia humana, SIDA y HIV en todas sus formas agudizaciones, secuelas y consecuencias. Enfermedades venéreas o de transmisión sexual.',
-                    link:''
+                    link:[]
                 },
                 {
                     label: 'o)',
                     termInfo: 'Enfermedades crónicas y/o preexistentes: Quedan expresamente excluidos los estudios y/o los tratamientos relacionados con enfermedades crónicas o preexistentes o congénitas o recurrentes, conocidas o no por el Asegurado padecidas con anterioridad al inicio de la vigencia de este seguro y/o del viaje, lo que sea posterior, así como sus agudizaciones, secuelas o consecuencias (incluso cuando las mismas aparezcan durante el viaje).',
-                    link:''
+                    link:[]
                 }
 
             ]

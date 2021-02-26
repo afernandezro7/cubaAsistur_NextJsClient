@@ -98,14 +98,14 @@ export default function CoberturaPoliza() {
                                     <p>
                                         { term.termInfo }
                                         {
-                                            term.link && 
-                                                <Link href={`/${lang.currentLang.toLowerCase()}/faqs`} >
+                                            term.link.length >0 && 
+                                                <Link href={`${term.link[1]}`} >
                                                     <a 
                                                         className="text-primary" 
                                                         target="_blank" 
                                                         rel="noopener noreferrer"
                                                     >
-                                                        {term.link}
+                                                        {term.link[2]}
                                                     </a>
 
                                                 </Link>

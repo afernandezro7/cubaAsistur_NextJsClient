@@ -26,7 +26,7 @@ export default function QuienesSomos() {
                                     <h2 className="cober--Tema text-primary">{ item.title }</h2>
                                 </div>
                                 {
-                                    item.isList 
+                                    item.items.length > 0
                                         ? <div className="cober--ItemContent text-left">
                                             <ul className="pl-0">
                                                 {
